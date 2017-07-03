@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul{
+				list-style:none;
+			}
+			#top{
+				width:90%;
+				height:50px;
+				border-bottom:1px solid;
+				margin-left:5%;
+				font-size:30px;
+				line-height:50px;
+				position:relative;
+				top:0;
+			}
+		#left{
+				width:12%;
+				height:200px;
+				/*border:1px solid yellow;*/
+				position:absolute;
+				top:90px;
+				left:80px;
+				
+			}
+			.ul1{
+				list-style:none;
+				
+			}
+			.ul1 li{
+				width:20%;
+				height:40px;
+				padding:0px 10px;
+				line-height:40px;
+				border-left:5px solid cornflowerblue;
+				
+			}
+			#right{
+				width:77%;
+				height:400px;
+				/*border:1px solid olive;*/
+				position:relative;
+				top:20px;
+				left:18%;
+			}
+			
+			.ul2{
+				list-style:none;
+				padding:0 0;
+			}
+			.ul2 li{
+				width:100%;
+				height:50px;
+				border-top:1px solid gainsboro;
+				border-bottom:1px solid gainsboro;
+				line-height:50px;
+				
+			}
+			.ul2 li button{
+				position:absolute;
+				right:20px;
+			}
+			.ul2 .li_2{
+				width:100%;
+				height:200px;
+				/*background:gray;*/
+				margin-top:-20px;
+				display:none;
+			} 
+			
+				
+			
+			.ul2 .li_2 p{
+				height:25px;
+			}
+			.btn1{
+				position:absolute;
+				right:140px;
+			}
+			.btn2{
+				position:absolute;
+				right:50px;
+			}
+			span{
+				position:absolute;
+				right:250px;
+			}
+			.tu{
+				position:absolute;
+				right:350px;
+			}
+			.content li{display:none;}
+			.active{
+				border-left:5px solid cornflowerblue;
+			}
+			#left .ul1 .act{
+				border-left:none;
+			}
+			#r-top{
+				width:80%;
+				height:200px;
+				/*border:1px solid;*/
+				margin-left:15%;
+			}
+			#r-top dd{
+				float:left;
+				width:20%;
+				height:100px;
+				border:1px solid;
+			}
+			#r-bottom{
+				width:80%;
+				height:200px;
+				/*border:1px solid;*/
+				margin-left:15%;
+				margin-top:30px;
+			}
+			#r-bottom dd{
+				float:left;
+				width:20%;
+				height:100px;
+				border:1px solid;
+				margin-top:30px;
+			}
+			.a1{
+				width:80%;
+				height:300px;
+				border:1px solid;
+				margin-left:15%;
+				display:none;
+				margin-top:30px;
+			}
+			.a2{
+				width:80%;
+				height:300px;
+				border:1px solid;
+				margin-left:15%;
+				display:none;
+				margin-top:30px;
+			}
+			
+		</style>
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js">
+			
+		</script>
+	</head>
+	<body>
+		
+		   <div id="top">
+			S1
+		   </div>
+		<div id="left">
+			<ul class="ul1">
+				<li class="active">红色</li>
+				<li class="act">蓝色</li>
+				<li class="act">绿色</li>
+				<li class="act">紫色</li>
+			</ul>
+		</div>
+		
+		<div id="right">
+			<ul class="ul_r">
+				<li style="dispaly:block">
+					<ul class="ul2">
+				<li>1团结统一的中华民族是海内外中华儿女共同的根，博大精深的中华文化是海内外中华儿
+				<button>显示</button>
+				</li>
+				<div class="li_2">
+					<p style="margin-top:40px">翻开“十三五”规划，一项项惠港政策振奋人心</p>
+					<p>功能得到支持；香港与内地的交流</p>
+					<p>十三五”规划为香港发展提供利好</p>
+					<p>有助于内地企业“走出去</p>
+					<div class="tu">
+						图片
+					</div>
+					<span>是否有版主</span>
+					<button class="btn1">按钮1</button>
+					<button class="btn2">按钮2</button>
+				</div>
+				<li>2央视网消息：6月26日下午，习近平在全国政协副主席、香港特别行政区行政长官梁振英
+				<button>显示</button>
+				
+				</li>
+				
+				<div class="li_2">
+					<p style="margin-top:40px">翻开“十三五”规划，一项项惠港政策振奋人心</p>
+					<p>功能得到支持；香港与内地的交流</p>
+					<p>十三五”规划为香港发展提供利好</p>
+					<p>有助于内地企业“走出去</p>
+					<div class="tu">
+						图片
+					</div>
+					<span>是否有版主</span>
+					<button class="btn1">按钮1</button>
+					<button class="btn2">按钮2</button>
+				</div>
+				<li>3等陪同下来到国家博物馆参观展览。展厅正对面摆放着“同心圆”互动装置，代表着香港同胞和
+				<button>显示</button>
+				</li>
+				
+				<div class="li_2">
+					<p style="margin-top:40px">翻开“十三五”规划，一项项惠港政策振奋人心</p>
+					<p>功能得到支持；香港与内地的交流</p>
+					<p>十三五”规划为香港发展提供利好</p>
+					<p>有助于内地企业“走出去</p>
+					<div class="tu">
+						图片
+					</div>
+					<span>是否有版主</span>
+					<button class="btn1">按钮1</button>
+					<button class="btn2">按钮2</button>
+				</div>
+				
+				<li>4“希望广大香港同胞与全国人民一道携手同心、开拓创新，把握国家发展机遇，推进‘一国
+				<button>显示</button>
+				</li>
+				<div class="li_2">
+					<p style="margin-top:40px">翻开“十三五”规划，一项项惠港政策振奋人心</p>
+					<p>功能得到支持；香港与内地的交流</p>
+					<p>十三五”规划为香港发展提供利好</p>
+					<p>有助于内地企业“走出去</p>
+					<div class="tu">
+						图片
+					</div>
+					<span>是否有版主</span>
+					<button class="btn1">按钮1</button>
+					<button class="btn2">按钮2</button>
+				</div>
+				
+				<li>5维护香港的繁荣稳定，是香港与内地携手铸就“中国梦”的前提。在福建、浙江等地任职期
+				<button>显示</button>
+				</li>
+				<div class="li_2">
+					<p style="margin-top:40px">翻开“十三五”规划，一项项惠港政策振奋人心</p>
+					<p>功能得到支持；香港与内地的交流</p>
+					<p>十三五”规划为香港发展提供利好</p>
+					<p>有助于内地企业“走出去</p>
+					<div class="tu">
+						图片
+					</div>
+					<span>是否有版主</span>
+					<button class="btn1">按钮1</button>
+					<button class="btn2">按钮2</button>
+				</div>
+				
+				<li>6间，习近平多次率企业代表团赴香港洽谈交流；在中央分管港澳事务期间，习近平前往香港调
+				<button>显示</button>
+				</li>
+				<div class="li_2">
+					<p style="margin-top:40px">翻开“十三五”规划，一项项惠港政策振奋人心</p>
+					<p>功能得到支持；香港与内地的交流</p>
+					<p>十三五”规划为香港发展提供利好</p>
+					<p>有助于内地企业“走出去</p>
+					<div class="tu">
+						图片
+					</div>
+					<span>是否有版主</span>
+					<button class="btn1">按钮1</button>
+					<button class="btn2">按钮2</button>
+				</div>
+				
+				<li>7研考察，了解社会民生；担任总书记后，习近平多次就香港事务发表讲话，始终关心香港的社
+				<button>显示</button>
+				</li>
+				<div class="li_2">
+					<p style="margin-top:40px">翻开“十三五”规划，一项项惠港政策振奋人心</p>
+					<p>功能得到支持；香港与内地的交流</p>
+					<p>十三五”规划为香港发展提供利好</p>
+					<p>有助于内地企业“走出去</p>
+					<div class="tu">
+						图片
+					</div>
+					<span>是否有版主</span>
+					<button class="btn1">按钮1</button>
+					<button class="btn2">按钮2</button>
+				</div>
+				
+				<li>8廖晓华是庐山一家供港澳蔬菜基地的采摘工，她每天的工作是摘菜心。供港菜心对长度
+				<button>显示</button>
+				</li>
+				<div class="li_2">
+					<p style="margin-top:40px">翻开“十三五”规划，一项项惠港政策振奋人心</p>
+					<p>功能得到支持；香港与内地的交流</p>
+					<p>十三五”规划为香港发展提供利好</p>
+					<p>有助于内地企业“走出去</p>
+					<div class="tu">
+						图片
+					</div>
+					<span>是否有版主</span>
+					<button class="btn1">按钮1</button>
+					<button class="btn2">按钮2</button>
+				</div>
+			</ul>
+				</li>
+				<li style="display:none">555555555</li>
+				<li style="display:none">
+				
+				<div id="r-top">
+			<dl class="dl1">
+				<dt>标题一</dt>
+				<dd>看看看看看看看看看</dd>
+				
+				<dd>看看看看看看看看看</dd>
+				
+				<dd>看看看看看看看看看</dd>
+				
+			</dl>
+			
+		</div>
+		
+		        <div class="a1">
+					用鼠标移过下面的元素：
+				</div>
+				<div class="a1">
+					我们为了添加某种效果可以从一种样式转变到另一个的时候
+				</div>
+				<div class="a1">
+					无需使用Flash动画或JavaScript。
+				</div>
+				
+		<div id="r-bottom">
+			<dl class="dl2">
+				<dt>标题二</dt>
+				<dd>斤斤计较斤斤计较斤斤计较</dd>
+				<dd>斤斤计较斤斤计较斤斤计较</dd>
+				<dd>斤斤计较斤斤计较斤斤计较</dd>
+			</dl>
+		</div>
+		
+		      <div class="a2">
+					如果检测结果有差异,价格会有一定浮动
+				</div>
+				<div class="a2">
+					我们会主动联系您确认价格,若您不接受价格
+				</div>
+				<div class="a2">
+					爱回收会为您退回机器,并承担所有的快递费用
+				</div>	
+				
+				
+				</li>
+				<li style="display:none">777777777</li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	
+	$(function(){
+// 左边
+ $('.ul1').find('li').click(function(){
+ var index = $(this).index();
+ $(this).addClass('active').siblings().removeClass('active');
+ $('.ul_r').children('li').eq(index).show().siblings().hide();
+ $('.ul1').children('li').eq(index).css({'border-left':'5px solid cornflowerblue'}).siblings().css({'border-left':"none"})
+ })
+// 右边
+
+ $('.ul_r li').find('button').click(function(){
+ 	var index = $(this).index();
+ 	$('.ul2').children('.li_2').eq(index).show();
+ 	
+ })
+
+ 
+//第三栏
+//		上部
+		$('.dl1').find('dd').click(function(){
+ var index = $(this).index()-1;
+ $('.a1').eq(index).show().siblings('.a1').hide();
+	})
+	
+//	下部
+$('.dl2').find('dd').click(function(){
+ var index = $(this).index()-1;
+ $('.a2').eq(index).show().siblings('.a2').hide();
+})
+ 
+ })
+</script>
